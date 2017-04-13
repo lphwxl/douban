@@ -61,7 +61,8 @@
           }
        }
        public function actionSearch(){
-           
+           $result = Film::findBySql('select * from film order by score desc')->asArray()->all();
+           return $this->renderPartial('search',array('result'=>$result));
    }
-
+   }
 ?>

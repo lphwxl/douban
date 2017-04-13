@@ -1,0 +1,8 @@
+douban.sql  采集的数据
+
+
+douban/web/index.php?r=movie/getdata   该方法用于采集数据，并存入到数据库
+
+
+
+douban/web/index.php?r=movie/search  查看采集数据的展示页面
